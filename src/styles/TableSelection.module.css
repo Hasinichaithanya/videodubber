@@ -1,0 +1,35 @@
+.rowSelected {
+  background-color: var(--mantine-color-blue-light);
+}
+.postReqCosntainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.inputContainer {
+  padding: 10px;
+}
+.nameInput,
+.mailInput {
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.nameInput:hover,
+.mailInput:hover {
+  box-shadow: 0px 2px 2px 0px;
+  padding: 12px;
+}
+.Loader {
+  align-self: center;
+  padding: 30px;
+  margin-bottom: 40px;
+}

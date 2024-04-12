@@ -1,5 +1,24 @@
-import "@/styles/globals.css";
+// pages/_app.js
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+import { createTheme, MantineProvider } from "@mantine/core";
+import "@mantine/core/styles.css";
+
+const theme = createTheme({
+  breakpoints: {
+    xs: "30em",
+    sm: "48em",
+    md: "64em",
+    lg: "74em",
+    xl: "90em",
+  },
+});
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <MantineProvider theme={theme}>
+      <Component {...pageProps} />
+    </MantineProvider>
+  );
 }
+
+export default MyApp;
